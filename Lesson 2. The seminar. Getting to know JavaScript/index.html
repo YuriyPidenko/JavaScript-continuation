@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Задание 1</h3>
+    <div id="block">
+        <p>1</p>
+        <p>2</p>
+    </div>
+
+    <p class="www">text 1</p>
+    <p class="www">text 2</p>
+
+    <h3>Задание 2</h3>
+    <a class="link" href="#">link text html</a>
+    <img class="photo" src="" alt="">
+
+    <h3>Задание 3, 4, 5</h3>
+    <div class="content"></div>
+
+    <script>
+        // 1
+        const block = document.querySelector('#block p');
+        console.log(block);
+
+        const www = document.querySelector('.www');
+        console.log(www);
+
+        //2
+        const link = document.querySelector('.link');
+        link.textContent = 'link text js';
+        link.href = 'https://developer.mozilla.org/ru/';
+
+        const photo = document.querySelector('.photo');
+        photo.src = 'https://cute-cat.ru/wp-content/uploads/2024/04/c100b6a0bd59ad5e8bad8f4ca43723b5-kopiya.jpg'
+
+        //3
+        const content = document.querySelector('.content');
+        const newParagraph = document.createElement('p');
+        newParagraph.textContent = 'Новый текстовый элемент';
+        content.appendChild(newParagraph);
+        newParagraph.remove();
+
+        //4
+        const newButton = document.createElement('button');
+        newButton.textContent = 'Отправить';
+        content.append(newButton);
+
+        console.log(newButton);
+
+        let count = 0;
+        newButton.onclick = function () {
+            newButton.textContent = 'Текст отправлен';
+            count++
+            console.log(`Нажали на кнопку ${count} раз`);
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- 
+Задание 5 (тайминг 15 минут)
+Дан тег <div class="content"></div>
+Создайте с помощью javascript новый элемент button
+Добавьте текст для кнопки “Отправить”
+При клике на данную кнопку необходимо чтобы текст поменялся на “Текст отправлен”
+-->
