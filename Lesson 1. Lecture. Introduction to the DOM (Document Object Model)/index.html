@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Lorem, ipsum dolor.</h1>
+    <h2 id="heading">Lorem ipsum dolor sit.</h2>
+    <ul class="ul">
+        <li class="list">text 1</li>
+        <li class="list">text 2</li>
+        <li class="list">text 3</li>
+    </ul>
+    <p class="text">Lorem, ipsum dolor. 1</p>
+    <p class="text">Lorem, ipsum dolor. 2</p>
+    <p class="text">Lorem, ipsum dolor. 3</p>
+    <p class="text">Lorem, ipsum dolor. 4</p>
+
+    <button class="btn">Купить</button>
+    <div class="content">
+        <img class="img" src="photo.jpg" alt="hh">
+
+    </div>
+    <script>
+        const buttonEl = document.querySelector('.btn');
+        const contentEl = document.querySelector('.content');
+        const textEl = document.createElement('p');
+        const imgEl = document.querySelector('.img')
+
+
+        imgEl.onclick = function () {
+            imgEl.src = 'hew.jpg'
+        }
+
+        textEl.textContent = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat nam expedita sit! Quis, in? Ipsum error ut optio. Reiciendis doloremque ad natus fugiat perspiciatis autem, possimus corrupti velit eos qui.'
+
+        console.log(buttonEl);
+        buttonEl.onclick = function () {
+            buttonEl.textContent = 'Товар в корзине'
+            contentEl.appendChild(textEl);
+        }
+
+
+
+
+
+        const titleEl = document.querySelector('.title')
+        titleEl.textContent = 'Заголовок из JS' // поменял заголовок
+
+        const heading2 = document.querySelector('#heading')
+        heading2.remove()
+
+        const ul = document.querySelector('ul')
+        const heading3 = document.createElement('h3') // Создаем новый Элемент (тег)
+        heading3.textContent = 'Мой первый текс через JS' // в новый элемент добовляем контект (текст)
+        ul.appendChild(heading3) // Создадим новый абзац в конце раздела
+
+        const paragraph = document.createTextNode(' Сожержимое текстового ноды') // создадим текстовый узел
+        heading3.appendChild(paragraph) // Затем возьмём ссылку и добавим к нему дополнительный текстовый узел
+
+        // const heading2 = document.getElementById('heading') // Найти по id (старый способ)
+        // console.log(heading2);
+
+        // const heading3 = document.querySelector('#heading') // Найти по id (новый способ)
+        // console.log(heading3);
+
+        // const listEls = document.getElementsByClassName('list') // Найти Все селекторы (старый способ)
+        // console.log(listEls);
+
+        // const listElsQS = document.querySelectorAll('.list') // Найти Все селекторы (Новый способ)
+        // console.log(listElsQS);
+
+        // const ulTeg = document.getElementsByTagName('ul') // Найти по тегу (старый способо)
+        // console.log(ulTeg);
+
+        // const ulTegQS = document.querySelector('ul') // Найти по тегу (новый способо)
+        // console.log(ulTegQS);
+
+
+
+        // const heading = document.querySelector('.title')// Найти по селектор (class)
+        // const text = document.querySelectorAll('.text')// Найти Все селекторы
+        // text.forEach(element => {
+        //     console.log(element);
+        // });
+        // console.log(heading);
+        // console.log(text);
+    </script>
+</body>
+
+</html>
