@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            color: white;
+            text-transform: uppercase;
+            background-color: #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content"></div>
+
+    <script>
+        const content = document.querySelector('.content'); // ловим класс content
+
+        const h1El = document.createElement('h1'); // создаем элемент
+        h1El.textContent = 'h1 element'; // добавляем текст 
+        // h1El.style.background = '#ccc'; // добавляем стиль   Инлайн стили главней
+        // h1El.style.textAlign = 'center'; // добавляем стиль
+        h1El.setAttribute('class', 'heading'); // выставляем значения атрибута  (создаем класс и именем heading)
+
+        const imgEl = document.createElement('img');
+        imgEl.src = 'photo.png'
+        imgEl.setAttribute('alt', 'Крутое фото')
+
+        content.appendChild(h1El); // добавляем элемет h1 в блок content
+        content.appendChild(imgEl)
+
+
+    </script>
+</body>
+
+</html>
