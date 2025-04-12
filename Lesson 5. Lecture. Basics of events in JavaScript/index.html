@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5</title>
+</head>
+
+<body>
+    <button class="button">Купить 1</button>
+    <!-- <button class="button">Купить 2</button>
+    <button class="button">Купить 3</button> -->
+
+    <!-- <ul class="menu">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul> -->
+
+    <!-- <input type="text"> -->
+    <form action="#">
+        <input type="text" class="input">
+        <div class="error"></div>
+    </form>
+
+    <script>
+        const inputText = document.querySelector('input');
+        const formRun = document.querySelector('form');
+        const errorEl = document.querySelector('.error');
+
+        formRun.addEventListener('submit', (event) => {
+            if (inputText.value === '') {
+                event.preventDefault();
+                errorEl.textContent = 'Поле не должно быть пустым'
+            }
+        });
+
+        //5
+        // const inputEl = document.querySelector('input');
+
+        // inputEl.addEventListener('input', (event) => {
+        //     if (Number(event.target.value) === 123) {
+        //         console.log('Верно');
+        //     } else {
+        //         console.log('не верно');
+        //     }
+        // });
+
+        //4
+        // const buttonEl = document.querySelector('.button');
+
+        // buttonEl.addEventListener('mouseover', function (e) {
+        //     console.log('Не нужно наводить, ты лучше нажми');
+        // });
+
+        // buttonEl.addEventListener('mouseleave', function (e) {
+        //     console.log('Не нужно убегать');
+        // });
+
+
+        // 3
+        // const menuEl = document.querySelector('.menu');
+
+        // const nameFucnction = (e) => {
+        //     console.log(e.target, e.currenTarget);
+        // }
+
+        // document.addEventListener('click', nameFucnction)
+
+
+        // //2
+        // const buttonEls = document.querySelectorAll('.button');
+
+        // buttonEls.forEach(element => {
+        //     element.addEventListener('click', function (event) {
+        //         const target = event.target;
+        //         console.log(target);
+        //     });
+        // });
+
+
+
+
+        //1
+        // const buttonEl = document.querySelector('.button');
+        // let count = 0;
+        // let counter = 0;
+
+        // const click = function () {
+        //     count++
+        //     console.log(`Кликов по кнопке ${count}`);
+        //     console.log('Click js button');
+        // }
+
+        // // buttonEl.onclick = click;
+
+        // buttonEl.addEventListener('click', click);
+
+        // // buttonEl.addEventListener('click', function (e) {
+        // //     console.log('click add');
+        // // });
+
+        // // buttonEl.addEventListener('click', function (e) {
+        // //     console.log('click add  two');
+        // // });
+    </script>
+</body>
+
+</html>
