@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1 class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, est totam deleniti atque quia
+        voluptate non distinctio quam voluptas corporis voluptatem ipsum molestiae officia, error odio nobis repellendus
+        odit illo.</h1>
+    <h2 id="heading">Lorem ipsum dolor sit amet.</h2>
+    <ul class="ul">
+        <li class="list">text 1</li>
+        <li class="list">text 2</li>
+        <li class="list">text 3</li>
+    </ul>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat alias ex delectus suscipit iure
+        maiores porro aliquid minima assumenda ullam iusto beatae obcaecati cum quibusdam blanditiis, reiciendis amet
+        facere quo.</p>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat alias ex delectus suscipit iure
+        maiores porro aliquid minima assumenda ullam iusto beatae obcaecati cum quibusdam blanditiis, reiciendis amet
+        facere quo.</p>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat alias ex delectus suscipit iure
+        maiores porro aliquid minima assumenda ullam iusto beatae obcaecati cum quibusdam blanditiis, reiciendis amet
+        facere quo.</p>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat alias ex delectus suscipit iure
+        maiores porro aliquid minima assumenda ullam iusto beatae obcaecati cum quibusdam blanditiis, reiciendis amet
+        facere quo.</p>
+
+    <script>
+        // const listEls = document.getElementsByClassName('list');
+        // console.log(listEls);
+        // const listElsQS = document.querySelectorAll('.list');
+        // console.log(listElsQS);
+        // const heading2 = document.getElementById('heading');
+        // console.log(heading2);
+        // const heading = document.querySelector('.title');
+        // const text = document.querySelectorAll('.text');
+
+
+        const titleEl = document.querySelector('.title');
+        titleEl.textContent = 'Заголовок из JS';
+        const heading2 = document.querySelector('#heading');
+        heading2.remove();
+    </script> -->
+
+
+    <button class="btn">Купить</button>
+    <div class="content">
+
+    </div>
+
+    <img class="img" src="photo.jpg" alt="photo">
+
+    <script>
+
+        const buttonEl = document.querySelector('.btn');
+        const contentEl = document.querySelector('.content')
+        const imgEl = document.querySelector('.img')
+
+        imgEl.onclick = function () {
+            imgEl.src = 'newimg.jpg'
+        }
+
+        const textEl = document.createElement('p');
+        textEl.textContent = 'Товар закончился';
+
+        buttonEl.onclick = function () {
+            buttonEl.textContent = 'товар в корзине'
+            contentEl.appendChild(textEl)
+        }
+
+
+
+    </script>
+</body>
+
+</html>
