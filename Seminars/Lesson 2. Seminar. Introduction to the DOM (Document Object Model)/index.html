@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- задание 1 -->
+    <!-- <div id="block">
+        <p>1</p>
+        <p>2</p>
+    </div>
+    <p class="www">text 1</p>
+    <p class="www">text 2</p>
+
+    <script>
+        const pEl = document.querySelector('p')
+        const textEl = document.querySelector('.www')
+        console.log(pEl);
+        console.log(textEl);
+    </script> -->
+
+    <!-- задание 2 -->
+    <!-- <a class="link" href="#">link text html</a>
+    <img class="photo" src="" alt="">
+
+
+    <script>
+        const aLinkEl = document.querySelector('.link');
+        const imgPhotoEL = document.querySelector('.photo');
+
+        aLinkEl.textContent = 'link text js';
+        aLinkEl.href = 'https://developer.mozilla.org/ru/';
+        console.log(aLinkEl);
+
+        imgPhotoEL.src = 'https://i.pinimg.com/736x/19/66/2f/19662f57b086e0ea7a60a87b8e7d1c82.jpg'
+    </script> -->
+
+    <!-- Задание 3  -->
+    <!-- <div class="content"></div>
+
+    <script>
+        const divContentEL = document.querySelector('.content');
+        const textEl = document.createElement('p');
+        textEl.textContent = 'Новый текстовый элемент';
+        divContentEL.appendChild(textEl);
+        textEl.remove();
+    </script> -->
+
+    <!-- Задание 4 -->
+    <div class="content"></div>
+    <script>
+        const divContentEL = document.querySelector('.content');
+        const buttonEl = document.createElement('button');
+        let count = 0;
+
+        buttonEl.textContent = 'Отправить';
+        divContentEL.append(buttonEl)
+
+        buttonEl.onclick = function () {
+            count++;
+            console.log(count);
+            buttonEl.textContent = 'Текст отправлен'
+        }
+    </script>
+</body>
+
+
+</html>
