@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            color: white;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="content"></div>
+
+    <script>
+        const content = document.querySelector('.content');
+
+        const h1El = document.createElement('h1');
+        h1El.textContent = 'h1 element';
+        h1El.style.backgroundColor = '#ccc';
+        h1El.style.textAlign = 'center';
+        h1El.setAttribute('class', 'heading')
+
+        const imgEl = document.createElement('img');
+        imgEl.src = 'photo.png';
+        imgEl.setAttribute('alt', 'alt')
+
+        content.append(h1El);
+        content.append(imgEl);
+
+    </script> -->
+
+
+    <ul class="menu">
+        <li class="menu__list"><a href="" class="menu__link">link-1</a></li>
+        <li class="menu__list"><a href="" class="menu__link">link-2</a></li>
+        <li class="menu__list"><a href="" class="menu__link">link-3</a></li>
+        <li class="menu__list"><a href="" class="menu__link">link-4</a></li>
+    </ul>
+    <script>
+        const liEl = document.querySelectorAll('.menu__list');
+        const liElOne = document.querySelector('.menu__list');
+        const linkEl = document.querySelector('.menu__link');
+        const menueEl = document.querySelector('.menu');
+
+        // console.log(liEl);
+
+        // console.log(liElOne.parentNode.children);
+
+        // console.log(linkEl.children);
+        // console.log(linkEl.childNodes);
+
+        // console.log(menueEl.children);
+        // console.log(menueEl.childNodes);
+
+        // menueEl.childNodes.forEach(element => {
+        //     console.log(element);
+        // });
+
+        // console.log(liElOne);
+        // console.log(liElOne.lastElementChild);
+        // console.log(liElOne.lastChild);
+
+        // console.log(liElOne.parentElement.lastElementChild);
+        // console.log(liElOne.parentElement.lastChild);
+
+        console.log(liElOne.parentElement.firstElementChild);
+
+        console.log(liElOne.nextElementSibling.nextElementSibling);
+
+        console.log(liElOne.previousElementSibling);
+
+        console.log(liElOne.parentElement.lastElementChild.previousElementSibling);
+
+
+
+    </script>
+
+    <!-- <div class="content">
+        <p>Первый параграф</p>
+        <p>Второй параграф</p>
+        <p>Третий параграф</p>
+    </div>
+    <script>
+        const divElement = document.querySelector('.content');
+
+        Array.from(divElement.childNodes).forEach((childNode) => {
+            console.log('childNodes "%s" типа "%d"', childNode.nodeName, childNode.nodeType)
+        });
+
+        [...divElement.childNodes].forEach((childNode) => {
+            console.log('childNodes "%s" типа "%d"', childNode.nodeName, childNode.nodeType)
+        });
+
+        [...divElement.children].forEach(element => {
+            console.log(element);
+        })
+    </script> -->
+</body>
+
+</html>
