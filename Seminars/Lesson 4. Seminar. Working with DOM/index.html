@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Задание 1 -->
+    <!-- <div class="block">
+
+    </div>
+
+    <script>
+        const block = document.querySelector('.block');
+        const item = document.createElement('div');
+        const btn = document.createElement('button');
+
+        block.append(item);
+        block.append(btn);
+
+        item.setAttribute('class', 'item');
+        item.textContent = 'Элемент внутри';
+        item.style.color = 'blue';
+        item.style.border = '1px solid black';
+        item.style.backgroundColor = '#f8f8f8';
+        item.style.padding = '16px';
+        item.className += ' item_1';
+        item.classList.add('item_2');
+
+        btn.textContent = 'click'
+        btn.style.padding = '10px 15px'
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('btn')
+        });
+
+    </script> -->
+
+    <!-- Задание 2 -->
+    <!-- <div class="elem">
+        <img src="photo.png" alt="photo">
+        <div class="content">
+            <h2 class="heading">Lorem, ipsum dolor.</h2>
+            <p class="text">Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Recusandae, ea!</p>
+        </div>
+    </div>
+
+    <script>
+        const text = document.querySelector('.text');
+
+
+        console.log(text.parentElement.firstElementChild);
+
+        const content = text.parentElement
+        console.log(content);
+
+
+        console.log(text.parentElement.previousElementSibling);
+
+        const elemEL = text.parentElement.parentElement;
+        console.log(elemEL);
+
+
+        const btnEl = document.createElement('button');
+        btnEl.textContent = 'click';
+        elemEL.append(btnEl);
+        btnEl.onclick = function () {
+            const sendEl = document.createElement('div');
+            sendEl.setAttribute('class', 'send');
+            sendEl.textContent = 'Вы нажали на кнопку';
+            content.append(sendEl);
+        }
+
+    </script> -->
+    <!-- Задание 3 -->
+    <!-- <div class="item">
+        <div class="elem">
+            <div class="info">
+                <h2 class="subtitle">Lorem, ipsum dolor.</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const h2El = document.querySelector('h2')
+        let currentEl = h2El;
+        while (currentEl.parentElement !== null) {
+            currentEl = currentEl.parentElement;
+            console.log(currentEl);
+        }
+        const buttonEl = document.createElement('button');
+        const itemEl = document.querySelector('.item');
+        itemEl.append(buttonEl);
+
+        buttonEl.textContent = 'click';
+        buttonEl.onclick = function () {
+            const pEL = document.createElement('p');
+            itemEl.append(pEL);
+            pEL.textContent = currentEl
+        } 
+           </script> -->
+
+
+    <!-- Задание 4 -->
+    <!-- <form action="#">
+        <input type="text">
+        <button class="btn">Отправить</button>
+    </form>
+
+    <script>
+        const formEl = document.querySelector('form');
+        const inputEl = document.querySelector('input')
+        const btn = document.querySelector('.btn')
+        console.log(inputEl.textContent);
+
+        btn.onclick = function () {
+            if (inputEl.value === '') {
+                const h2El = document.createElement('h2');
+                formEl.append(h2El)
+                h2El.textContent = 'Вы не заполнили поле ввода'
+                h2El.style.color = 'red'
+                inputEl.style.borderColor = 'red'
+            } else { }
+
+        }
+    </script> -->
+
+    <!-- Задание 4  -->
+    <div class="content"></div>
+
+    <script>
+        const content = document.querySelector('.content');
+        const btn = document.createElement('button');
+
+        btn.textContent = 'Отправить';
+        content.append(btn);
+        btn.onclick = function () {
+            btn.textContent = 'Текст отправлен'
+        }
+    </script>
+</body>
+
+</html>
