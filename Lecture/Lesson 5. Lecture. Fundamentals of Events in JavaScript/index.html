@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button class="button">Купить 1</button>
+    <button class="button">Купить 2</button>
+    <button class="button">Купить 3</button>
+
+
+    <script>
+        // const buttonEl = document.querySelector('.button');
+        // let count = 0;
+
+        // const click = function () {
+        //     console.log('Click js button');
+        //     count++;
+        //     console.log(`Кликов по кнопке ${count}`);
+        // }
+        // // document.addEventListener('click', function (e) {
+        // //     console.log('click add');
+        // // });
+
+        // buttonEl.onclick = click;
+
+        const buttonEl = document.querySelectorAll('.button');
+
+
+        buttonEl.forEach(element => {
+            element.addEventListener('click', function (event) {
+                const target = event.target;
+                console.log(target);
+            });
+        });
+
+
+    </script> -->
+
+    <!-- <ul class="menu">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <script>
+        const menuEl = document.querySelector('.menu');
+
+        const nameFucntion = (e) => {
+            console.log(e.target, e.currntTarget);
+        }
+
+        menuEl.addEventListener('click', nameFucntion);
+    </script> -->
+    <!-- 
+    <h1>Lorem, ipsum dolor.</h1>
+    <script>
+        document.addEventListener('DOMContentLoaded', function (e) {
+            console.log('loaded');
+        });
+
+        window.addEventListener('load', function (e) {
+            console.log('Все загрузилось');
+        });
+
+    </script> -->
+    <!-- <button>click</button>
+    <script>
+        const button = document.querySelector('button');
+        button.addEventListener('mouseover', function (e) {
+            console.log('Не нужно наводить, ты лучше жми');
+        });
+    </script> -->
+
+    <!-- <input type="text">
+    <script>
+        const inputEl = document.querySelector('input')
+
+        inputEl.addEventListener('input', (event) => {
+
+            if (Number(event.target.value) === 123) {
+                console.log('Верно');
+
+            } else {
+                console.log('Не угадал');
+            }
+        }); 
+     </script>-->
+
+    <form action="#">
+        <input type="text" class="input">
+        <div class="error"></div>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <script>
+        const inputText = document.querySelector('input');
+        const formRun = document.querySelector('form');
+        const errorEl = document.querySelector('.error');
+
+        formRun.addEventListener('submit', (event) => {
+            if (inputText.value === '') {
+                event.preventDefault();
+                errorEl.textContent = 'Поле не должно быть пустым'
+            }
+        })
+    </script>
+
+
+
+</body>
+
+</html>
