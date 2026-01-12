@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="super_element">Привет</p>
+
+    <img src="https://placeimg.com/50/50/animals" alt="">
+    <img src="https://placeimg.com/50/50/arch" alt="">
+    <img src="https://placeimg.com/50/50/nature" alt="">
+    <img src="https://placeimg.com/50/50/people" alt="">
+    <img src="https://placeimg.com/50/50/tech" alt="">
+    <img src="https://placeimg.com/50/50/tech/grayscale" alt="">
+    <img src="https://placeimg.com/50/50/tech/sepia" alt="">
+
+    <br>
+
+    <button>Кнопка</button>
+    <button class="super_element">Кнопка с классом btn</button>
+    <button>Кнопка</button>
+
+    <br>
+
+    <textarea></textarea>
+
+    <br>
+
+    <ul>
+        <li>
+            <button>Кнопка 1</button>
+        </li>
+        <li>
+            <button>Кнопка 2</button>
+        </li>
+        <li>
+            <button>Кнопка 3</button>
+        </li>
+        <li>
+            <button>Кнопка 4</button>
+        </li>
+    </ul>
+
+    <script>
+        "use strict";
+
+        // 1. Когда все теги прогрузились
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Все теги прогрузились');
+        });
+
+        // 2. Когда страница загрузилась
+        window.addEventListener('load', () => {
+            console.log('Страница полностью загрузилась!');
+        });
+
+        // 3. Проверка класса "super_element" при клике на элемент
+        document.addEventListener('click', (event) => {
+            const element = event.target;
+            const tagName = element.tagName.toLowerCase();
+            const hasClass = element.classList.contains('super_element');
+
+            console.log(`Класс "super_element" ${hasClass ? 'присутствует' : 'отсутствует'} в элементе "${tagName}".`);
+        });
+
+        // 4. Сообщение при наведении на textarea
+        const textarea = document.querySelector('textarea');
+        textarea.addEventListener('mouseover', () => {
+            console.log('Вы навели на textarea.');
+        });
+
+        // 5. Вывод текста кнопки из ul при клике
+        const ul = document.querySelector('ul');
+        ul.addEventListener('click', (event) => {
+            if (event.target.tagName === 'BUTTON') {
+                console.log(event.target.textContent);
+            }
+        });
+
+        // 7. Изменение фона каждого второго li
+        const listItems = document.querySelectorAll('ul > li');
+        for (let i = 1; i < listItems.length; i += 2) {
+            listItems[i].style.backgroundColor = 'lightgray';
+        }
+
+        // 6. Вопрос: Почему в console.log пишется сначала текст из 5 задания и только потом выводится текст из 3 задания, если мы кликаем по кнопкам в ul?
+        // Ответ: Это происходит из-за порядка, в котором выполняются обработчики событий. Когда вы кликаете на кнопку внутри ul, 
+    </script>
+</body>
+
+</html>
