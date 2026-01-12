@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Задание 1 -->
+    <!-- <button class="btn">click</button>
+
+    <script>
+        const btnEL = document.querySelector('.btn');
+
+        window.addEventListener('load', function () {
+            console.log('страница загрузилась');
+        });
+
+        btnEL.onclick = () => {
+            console.log('событие onclick');
+        }
+
+        btnEL.addEventListener('click', function () {
+            console.log('обытие addEventListener');
+        });
+
+    </script> -->
+
+    <!-- Задание 2 -->
+    <!-- <div class="btn-box">
+        <button class="btn">click 1</button>
+        <button class="btn">click 2</button>
+        <button class="btn">click 3</button>
+    </div>
+    <button class="btn4">click 4</button>
+    <button class="btn5">click 5</button>
+    <script>
+        const btnDiv = document.querySelector(".btn-box");
+        const btn4 = document.querySelector(".btn4");
+        const btn5 = document.querySelector(".btn5");
+        let cnt = 1;
+
+
+        btnDiv.addEventListener("click", function (e) {
+            console.log(e.target);
+        });
+
+
+
+        btn4.addEventListener("click", function (e) {
+            if (cnt === 2 || cnt === 3 || cnt === 4) {
+                console.log(`вы нажали ${cnt} раза`);
+            } else {
+                console.log(`вы нажали ${cnt} раз`);
+            }
+            cnt++;
+        });
+
+
+        btn5.addEventListener("click", function (e) {
+            btn5.textContent = "Вы нажали на эту кнопку";
+        });
+    </script> -->
+
+    <!-- Заданике 3 -->
+    <!-- <button id="addButton" onclick="addHeader()">Добавить заголовок</button>
+    <button onclick="removeHeader()">Удалить заголовок</button>
+    <button onmouseover="hoverButton()" onmouseout="unhoverButton()">Наведи на меня</button>
+
+    <script>
+        function addHeader() {
+            const button = document.getElementById('addButton');
+            const h1 = document.createElement('h1');
+            h1.textContent = 'Новый заголовок, данный элемент нужно расположить после кнопки';
+            button.parentNode.insertBefore(h1, button.nextSibling); // Можно добавлять через append
+        }
+
+        function removeHeader() {
+            const h1 = document.querySelector('h1');
+            if (h1) {
+                h1.parentNode.removeChild(h1);
+            }
+        }
+
+        function hoverButton() {
+            console.log('Вы навели на данную кнопку');
+        }
+
+        function unhoverButton() {
+            console.log('Наведения на кнопку больше нет');
+        }
+
+    </script> -->
+
+    <!-- Задание 4 -->
+    <!-- <ul>
+        <li class="list">list-1</li>
+        <li class="list">list-2</li>
+        <li class="list">list-3</li>
+    </ul>
+    <button class="button10">Добавить пункт</button>
+    <button class="button11">Удалить первый пункт</button>
+    <button class="button12">Добавить класс</button>
+    <script>
+        const listEls = document.querySelector('.list');
+        const buttonEl10 = document.querySelector('.button10');
+        const buttonEl11 = document.querySelector('.button11');
+        const buttonEl12 = document.querySelector('.button12');
+
+        buttonEl10.addEventListener('click', function (e) {
+            const newLi = document.createElement('li');
+            newLi.textContent = 'новый элемент списка';
+            listEls.append(newLi);
+            newLi.classList.add('item');
+        });
+
+        buttonEl11.addEventListener('click', function (e) {
+            const listEl = document.querySelector('.item');
+            listEl.remove();
+        })
+
+        buttonEl12.addEventListener('click', function (e) {
+            buttonEl12.classList.add('click');
+        })
+    </script> -->
+
+
+    <!-- Задание 5 -->
+    <div class="content"></div>
+
+    <script>
+        const contentEl = document.querySelector('.content')
+        const btnEl = document.createElement('button')
+
+        btnEl.textContent = ('Отправить');
+        contentEl.append(btnEl)
+
+        btnEl.addEventListener('click', function () {
+            btnEl.textContent = ('Текст отправлен');
+        });
+    </script>
+</body>
+
+</html>
