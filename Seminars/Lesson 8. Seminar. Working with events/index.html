@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Задание 1 -->
+    <!-- <form class="form" action="#">
+        <input id="checkbox" type="checkbox" class="check">
+        <label for="checkbox">
+            Согласен с условиями
+        </label>
+        <div class="error"></div>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <script>
+        const inputEL = document.querySelector('.check');
+        const formEL = document.querySelector('.form');
+        const errorEl = formEL.querySelector('.error')
+
+        inputEL.addEventListener('click', function (e) {
+            const target = e.target;
+            console.log(target.checked);
+        });
+
+        formEL.addEventListener('submit', function (e) {
+            if (inputEL.checked) {
+            } else {
+                errorEl.textContent = 'Необходимо согласиться с условиями'
+                e.preventDefault();
+            }
+        });
+
+    </script> -->
+
+    <!-- Задание 2 -->
+    <!-- <form>
+        <input type="radio" id="tea" name="drink" onclick="toggleRadio('tea')" data-was-checked="false">
+        <label for="tea">Чай</label>
+        <input type="radio" id="coffee" name="drink" onclick="toggleRadio('coffee')" data-was-checked="false">
+        <label for="coffee">Кофе</label>
+        <button id="submit" type="submit">Отправить</button>
+        <div class="messege"></div>
+    </form>
+    <script>
+
+        const formEL = document.querySelector('form');
+        const teaEl = document.querySelector('#tea');
+        const coffeeEl = document.querySelector('#coffee')
+        const btnEL = document.querySelector('#submit')
+        const messegeEl = document.querySelector('.messege');
+
+
+        formEL.addEventListener('submit', (e) => {
+            if (teaEl.checked) {
+                messegeEl.textContent = `чай закончился`;
+                coffeeEl.nodeValue = null;
+            } if (coffeeEl.checked) {
+                messegeEl.textContent = `Кофе закончился`;
+                teaEl.nodeValue = null;
+            } else {
+                messegeEl.textContent = ''
+            }
+            e.preventDefault();
+        });
+
+
+
+
+        function toggleRadio(id) {
+            const radio = document.getElementById(id);
+            if (radio.checked && radio.dataset.wasChecked === 'true') {
+                radio.checked = false;
+                radio.dataset.wasChecked = 'false';
+            } else {
+                // Сначала сбрасываем все остальные кнопки в группе
+                const radios = document.querySelectorAll('input[type="radio"][name="drink"]');  // Укажите имя группы!
+                radios.forEach(r => r.dataset.wasChecked = 'false');
+
+                radio.dataset.wasChecked = 'true';
+            }
+        }
+    </script> -->
+
+    <!-- Задание 3 -->
+    <!-- 
+    <form action="#">
+        <input class="pass" type="password">
+        <button type="submit">Отправить</button>
+    </form>
+
+    <script>
+        const formEl = document.querySelector('form');
+        const passEl = document.querySelector('.pass');
+        const password = 'пароль'
+
+        formEl.addEventListener('submit', (e) => {
+            if (passEl.value === password) {
+                console.log('да');
+                passEl.style.backgroundColor = 'green'
+            } else if (passEl.value === '') {
+                console.log('пусто');
+                passEl.style.borderColor = 'red'
+            } else if (passEl.value !== password) {
+                console.log('нет');
+                passEl.style.borderColor = 'red'
+                e.preventDefault();
+            }
+        });
+ </script>
+-->
+    <!-- Задание 4 -->
+    <input type="text" id="inputField" placeholder="Введите текст здесь">
+    <h1 id="header">Заголовок</h1>
+
+    <script>
+        const inputField = document.getElementById('inputField');
+        const header = document.getElementById('header');
+
+        inputField.addEventListener('input', function () {
+            header.textContent = inputField.value;
+        });
+    </script>
+
+    </script>
+
+</body>
+
+</html>
