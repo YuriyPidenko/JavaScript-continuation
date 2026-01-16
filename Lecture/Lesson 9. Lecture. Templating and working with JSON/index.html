@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-box {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            width: 250px;
+            border: 1px solid black;
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="product-box">
+        <div class="product">
+            <img src="photo.jpg" alt="photo">
+            <div class="product__content">
+                <a class="product__name" href="product.html">Название товар html</a>
+                <p class="product__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="product__price">55</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        const productData = {
+            name: 'Название товара obj',
+            price: 80
+        }
+
+        const productNameLink = document.querySelector('.product__name');
+        const productsPrice = document.querySelector('.product__price');
+
+        productNameLink.textContent = productData.name;
+        productsPrice.textContent = productData.price;
+    </script> -->
+
+    <script>
+        const productData = [
+            {
+                src: 'img.png',
+                alt: 'img obj data',
+                name: 'Название из obj data',
+                link: 'product.html',
+                desc: 'Описание товара из obj data',
+                price: 21000,
+            },
+            {
+                src: 'img2.png',
+                alt: 'img obj data new photo',
+                name: 'Название нового товара из obj data',
+                link: 'product2.html',
+                desc: 'Описание нового товара из obj data',
+                price: 11000,
+            },
+            {
+                src: 'img3.png',
+                alt: 'img obj data new photo 3',
+                name: 'Название нового товара из obj data 3',
+                link: 'product3.html',
+                desc: 'Описание нового товара из obj data 3',
+                price: 33000,
+            }
+        ];
+
+        const productBox = document.querySelector('.product-box');
+
+        productData.forEach(productData => {
+            const productBox = document.querySelector('.product-box');
+
+            const productEL = document.createElement('div')
+            productEL.classList.add('product');
+
+            const productImg = document.createElement('img');
+            productImg.classList.add('product__img');
+            productImg.setAttribute('alt', productData.alt);
+            productImg.src = productData.src;
+
+            const productContent = document.createElement('div');
+            productContent.classList.add('product__content');
+
+            const productLink = document.createElement('a');
+            productLink.href = productData.link;
+            productLink.textContent = productData.name;
+
+            const productText = document.createElement('p');
+            productText.classList.add('product__text');
+            productText.textContent = productData.desc;
+
+            const productPrice = document.createElement('p');
+            productPrice.classList.add('product__price');
+            productPrice.textContent = productData.price;
+
+
+            productContent.append(productLink);
+            productContent.append(productText);
+            productContent.append(productPrice);
+            productEL.append(productImg);
+            productEL.append(productContent);
+            productBox.append(productEL);
+
+        });
+
+
+        // const productBox = document.querySelector('.product-box');
+
+        // const productEL = document.createElement('div')
+        // productEL.classList.add('product');
+
+        // const productImg = document.createElement('img');
+        // productImg.classList.add('product__img');
+        // productImg.setAttribute('alt', productData.alt);
+        // productImg.src = productData.src;
+
+        // const productContent = document.createElement('div');
+        // productContent.classList.add('product__content');
+
+        // const productLink = document.createElement('a');
+        // productLink.href = productData.link;
+        // productLink.textContent = productData.name;
+
+        // const productText = document.createElement('p');
+        // productText.classList.add('product__text');
+        // productText.textContent = productData.desc;
+
+        // const productPrice = document.createElement('p');
+        // productPrice.classList.add('product__price');
+        // productPrice.textContent = productData.price;
+
+
+        // productContent.append(productLink);
+        // productContent.append(productText);
+        // productContent.append(productPrice);
+        // productEL.append(productImg);
+        // productEL.append(productContent);
+        // productBox.append(productEL);
+
+
+    </script>
+</body>
+
+</html>
