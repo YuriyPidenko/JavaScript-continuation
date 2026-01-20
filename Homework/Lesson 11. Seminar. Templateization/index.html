@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header wrapper-header">
+        <div class="container header-flex ">
+            <div class="header-left">
+                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                <img src="img/search.svg" alt="поиск">
+            </div>
+            <div class="header-right">
+                <img src="img/burger.svg" alt="burger-menu">
+                <img class="dispplay-none" src="img/profile.svg" alt="профиль">
+                <img class="dispplay-none" src="img/basket.svg" alt="корзина покупак">
+            </div>
+        </div>
+    </header>
+    <section class="brand-section">
+        <div class="brand-section__container brand-section__flex wrapper">
+            <div class="brand-section__lef dispplay-none">
+                <img class="brand-section__img " src="img/brand-section.png" alt="человек в брендовой куртке">
+            </div>
+            <div class="brand-section__right">
+                <h1 class="brand-section__title">THE BRAND</h1>
+                <h2 class="brand-section__subtitle">OF&nbsp;LUXERIOUS<span class="brand-section__subtitle-color">
+                        FASHION</span></h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories wrapper">
+        <div class="container flex  categories-flex ">
+            <div class="categories-bloc__top">
+                <div class="categories-bloc">
+                    <img class="categories__img" src="img/for-women.png" alt="for-women">
+                    <div class="categories__text-bloc">
+                        <p class="categories__dsc">30% OFF</p>
+                        <h2 class="categories__subtitle">FOR WOMEN</h2>
+                    </div>
+                </div>
+                <div class="categories-bloc">
+                    <img class="categories__img" src="img/for-men.png" alt="for-men">
+                    <div class="categories__text-bloc">
+                        <p class="categories__dsc">HOT DEAL</p>
+                        <h2 class="categories__subtitle">FOR MEN</h2>
+                    </div>
+                </div>
+                <div class="categories-bloc">
+                    <img class="categories__img" src="img/for-kids.png" alt="for-kids">
+                    <div class="categories__text-bloc">
+                        <p class="categories__dsc">NEW ARRIVALS</p>
+                        <h2 class="categories__subtitle">FOR KIDS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class=" categories-bloc__bottom">
+                <img class="categories__img-bottom" src="img/accesories.png" alt="accesories">
+                <div class="categories__text-bloc">
+                    <p class="categories__dsc">LUXIROUS &amp;&nbsp;TRENDY</p>
+                    <h2 class="categories__subtitle">ACCESORIES</h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="product-cards wrapper ">
+        <h2 class="product-cards__heading">Fetured Items</h2>
+        <p class="product-cards__dsc">Shop for items based on what we featured in this week</p>
+        <div class="container flex product-cards__margin ">
+            <!-- 
+            <div class="product-box">
+                <img src="img/product-cards-1.png" alt="cards">
+                <div class="product-box-text">
+                    <h3 class="product-box__cards-name">ELLERY X M'O CAPSULE</h3>
+                    <p class="product-box__cards-description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product-box__cards-price">$52.00</p>
+                </div>
+            </div>
+
+
+            <div class="product-box">
+                <img src="img/product-cards-2.png" alt="cards">
+                <div class="product-box-text">
+                    <h3 class="product-box__cards-name">ELLERY X M'O CAPSULE</h3>
+                    <p class="product-box__cards-description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product-box__cards-price">$52.00</p>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="img/product-cards-3.png" alt="cards">
+                <div class="product-box-text">
+                    <h3 class="product-box__cards-name">ELLERY X M'O CAPSULE</h3>
+                    <p class="product-box__cards-description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product-box__cards-price">$52.00</p>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="img/product-cards-4.png" alt="cards">
+                <div class="product-box-text">
+                    <h3 class="product-box__cards-name">ELLERY X M'O CAPSULE</h3>
+                    <p class="product-box__cards-description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product-box__cards-price">$52.00</p>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="img/product-cards-5.png" alt="cards">
+                <div class="product-box-text">
+                    <h3 class="product-box__cards-name">ELLERY X M'O CAPSULE</h3>
+                    <p class="product-box__cards-description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product-box__cards-price">$52.00</p>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="img/product-cards-6.png" alt="cards">
+                <div class="product-box-text">
+                    <h3 class="product-box__cards-name">ELLERY X M'O CAPSULE</h3>
+                    <p class="product-box__cards-description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product-box__cards-price">$52.00</p>
+                </div>
+            </div> -->
+
+        </div>
+        <div class="flex"><button class="product-btn">Browse All Product</button></div>
+
+    </section>
+
+    <section class="advantages wrapper">
+        <div class="container advantages-flex flex ">
+            <div class="advantages-box">
+                <img class="advantages__img" src="img/truck.svg" alt="Грузовик">
+                <h3 class="advantages__subtitle">Free Delivery</h3>
+                <p class="advantages__dsc">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </div>
+
+            <div class="advantages-box">
+                <img class="advantages__img" src="img/discount.svg" alt="Скидка">
+                <h3 class="advantages__subtitle">Sales & discounts</h3>
+                <p class="advantages__dsc">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </div>
+
+            <div class="advantages-box">
+                <img class="advantages__img" src="img/crown.svg" alt="Корона">
+                <h3 class="advantages__subtitle">Quality assurance</h3>
+                <p class="advantages__dsc">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe wrapper">
+        <div class="subscribe-flex flex  container">
+            <div class="subscribe-left">
+                <img class="subscribe-left__img" src="img/subscribe-left.png" alt="женщина">
+                <p class="subscribe-left__dsc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                    condimentum“</p>
+            </div>
+
+            <div class="subscribe-right">
+                <h2 class="subscribe-right__heading">SUBSCRIBE</h2>
+                <p class="subscribe-right__dsc">FOR OUR NEWLETTER AND PROMOTION</p>
+                <form class="subscribe-right__form" action="#">
+                    <input class="subscribe-right__email" type="email" placeholder="Enter Your Email">
+                    <button class="subscribe-right__button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-flex container">
+            <div class="footer-left">
+                <p class="footer-text">© 2023 Brand All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-right">
+                <img src="img/Pinterest.svg" alt="Pinterest">
+                <img src="img/twitter.svg" alt="twitter">
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
