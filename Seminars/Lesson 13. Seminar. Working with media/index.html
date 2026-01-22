@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой медиаплеер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="player">
+        <video id="myVideo" src="video/5114908_Three_dimensional_3D_1280x720.mp4"></video>
+
+        <div class="controls">
+            <button id="playPauseBtn"><img src="img/play-solid-full.svg" alt="Play"></button>
+
+            <div class="progress-bar">
+                <progress id="progressBar" value="0" max="100"></progress>
+            </div>
+
+            <div class="volume-controls">
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+            </div>
+
+            <div class="time">
+                <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

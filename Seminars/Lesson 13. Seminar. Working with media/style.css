@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    /* Центрирование по центру */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.player {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    /* Обрезает содержимое, выходящее за границы элемента */
+}
+
+video {
+    width: 100%;
+    display: block;
+    /* Убирает лишний отступ снизу */
+}
+
+.controls {
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* Выравнивание элементов управления по вертикали */
+}
+
+.controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.controls button img {
+    width: 24px;
+    /* Размер иконок кнопок */
+    height: 24px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    /* Занимает все доступное пространство */
+    margin-right: 10px;
+}
+
+.progress-bar progress {
+    width: 100%;
+    height: 10px;
+    -webkit-appearance: none;
+    /* Убирает стандартный вид в Chrome */
+    appearance: none;
+    /* Убирает стандартный вид в других браузерах */
+    cursor: pointer;
+    /* Изменяет курсор при наведении */
+}
+
+.progress-bar progress::-webkit-progress-bar {
+    background-color: #ddd;
+    /* Цвет фона полосы */
+    border-radius: 5px;
+}
+
+.progress-bar progress::-webkit-progress-value {
+    background-color: #4CAF50;
+    /* Цвет заполнения полосы */
+    border-radius: 5px;
+}
+
+.volume-controls {
+    margin-right: 10px;
+}
+
+.volume-controls input[type="range"] {
+    width: 80px;
+    /* Ширина ползунка громкости */
+}
+
+.time {
+    font-size: 0.8em;
+    color: #555;
+}
